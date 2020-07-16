@@ -31,7 +31,7 @@ public final class GeographicPoint3d extends AbstractPoint {
         super(coordinate, srid);
     }
 
-    public GeographicPoint3d(double latitude, double longitude, double height) {
+    public GeographicPoint3d(double latitude, double longitude, Double height) {
         super(new Coordinate(longitude, latitude, height), 4979);
     }
 
@@ -43,7 +43,7 @@ public final class GeographicPoint3d extends AbstractPoint {
         return coordinate.getY();
     }
 
-    public double getHeight() {
+    public Double getHeight() {
         return coordinate.getZ();
     }
 
